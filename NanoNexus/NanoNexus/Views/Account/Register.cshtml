@@ -1,0 +1,45 @@
+﻿@using NanoNexus.ViewModels
+@model MemberRegisterVm
+ 
+    <!-- account start -->
+<section class="account pb-90">
+    <div class="container">
+        <div class="row mt-none-30">
+            <div class="col-lg-6 mt-30">
+                <div class="account__wrap pr-60">
+                    <h2 class="account__title">Sign Up</h2>
+                    <form asp-action="Register" method="post">
+                        <div class="account__input-field">
+                            <label for="name">Your Name</label>
+                            <input asp-for="Name" id="name" type="text" placeholder="Enter your name*" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="account__input-field">
+                            <label for="email">Email Address</label>
+                            <input asp-for="Email" id="email" type="email" placeholder="Enter Email Address" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="account__input-field">
+                            <label for="password">New Password</label>
+                            <input asp-for="Password" id="password" type="password" placeholder="Create password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="account__input-field">
+                            <input class="form-check-input" id="checkbox" type="checkbox">
+                            <label class="form-check-label" for="checkbox">I agree to all <a href="#!">Terms</a> & <a href="#!">Conditions</a> and Feeds</label>
+                        </div>
+                        <div class="account__btn">
+                            <button type="submit" class="thm-btn thm-btn__2">
+                                <span class="btn-wrap">
+                                    <span>Sign Up</span>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- account end -->
+

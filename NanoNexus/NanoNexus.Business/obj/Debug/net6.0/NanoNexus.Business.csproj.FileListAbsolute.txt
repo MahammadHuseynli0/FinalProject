@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\bin\Debug\net6.0\NanoNexus.Business.deps.json
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\bin\Debug\net6.0\NanoNexus.Business.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\bin\Debug\net6.0\NanoNexus.Business.pdb
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\bin\Debug\net6.0\NanoNexus.Core.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\bin\Debug\net6.0\NanoNexus.Data.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\bin\Debug\net6.0\NanoNexus.Data.pdb
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\bin\Debug\net6.0\NanoNexus.Core.pdb
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\NanoNexus.Business.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\NanoNexus.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\NanoNexus.Business.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\NanoNexus.Business.AssemblyInfo.cs
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\NanoNexus.Business.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\NanoNexu.6AB6B2DA.Up2Date
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\NanoNexus.Business.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\refint\NanoNexus.Business.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\NanoNexus.Business.pdb
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Business\obj\Debug\net6.0\ref\NanoNexus.Business.dll

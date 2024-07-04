@@ -1,0 +1,196 @@
+﻿@using NanoNexus.ViewModels
+@model List<BasketItemVm>
+
+<main>
+    <!-- breadcrumb start -->
+    <section class="breadcrumb-area">
+        <div class="container">
+            <div class="radios-breadcrumb breadcrumbs">
+                <ul class="list-unstyled d-flex align-items-center">
+                    <li class="radiosbcrumb-item radiosbcrumb-begin">
+                        <a asp-action="Index" asp-controller="Home"><span>Home</span></a>
+                    </li>
+                    <li class="radiosbcrumb-item radiosbcrumb-end">
+                        <span>Cart</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb end -->
+    <!-- start cart-section -->
+    <section class="cart-section woocommerce-cart pb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <div class="woocommerce">
+                        <form action="https://html.themexriver.com/" method="post">
+                            <table class="shop_table shop_table_responsive cart" id="cart-items">
+                                <thead>
+                                    <tr>
+                                        <th class="product-remove">&nbsp;</th>
+                                        <th class="product-thumbnail">&nbsp;</th>
+                                        <th class="product-name">Product</th>
+                                        <th class="product-price">Price</th>
+                                        <th class="product-quantity">Quantity</th>
+                                        <th class="product-subtotal">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr class="basket-item" data-product-id="@item.ProductId">
+                                            <td class="product-remove">
+                                                <button class="btn btn-danger btn-sm remove-item-btn" title="Remove">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                            <td class="product-thumbnail">
+                                                <a href="#!">
+                                                    <img width="57" height="70" src="~/uploads/products/@item.ImageUrl"
+                                                         class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="#!" />
+                                                </a>
+                                            </td>
+                                            <td class="product-name" data-title="Product">
+                                                <a href="#!">@item.Name</a>
+                                            </td>
+                                            <td class="product-price" data-title="Price">
+                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>$@item.Price</span>
+                                            </td>
+                                            <td class="product-quantity" data-title="Quantity">
+                                                <button class="btn-change-quantity" data-action="decrease" title="Decrease Quantity">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                                <input type="number" name="number" value="@item.Count" min="1" max="100" placeholder="Quantity">
+                                                <button class="btn-change-quantity" data-action="increase" title="Increase Quantity">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </td>
+                                            <td class="product-subtotal" data-title="Total">
+                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>$@(item.Price * item.Count)</span>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </form>
+
+                        <div class="cart-collaterals">
+                            <div class="cart_totals calculated_shipping">
+                                <h2>Cart Totals</h2>
+                                <table class="shop_table shop_table_responsive">
+                                    <tr class="cart-subtotal">
+                                        <th>Subtotal</th>
+                                        <td data-title="Subtotal">
+                                            <span class="woocommerce-Price-amount amount subtotal">
+                                                <span class="woocommerce-Price-currencySymbol"></span>$@Model.Sum(item => item.Price * item.Count)
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr class="order-total">
+                                        <th>Total</th>
+                                        <td data-title="Total"><strong><span class="woocommerce-Price-amount amount price-total"><span class="woocommerce-Price-currencySymbol"></span>$@(Model.Sum(item => item.Price * item.Count))</span></strong> </td>
+                                    </tr>
+                                </table>
+
+                                <div class="wc-proceed-to-checkout">
+                                    <a asp-action="checkout" asp-controller="shop" class="checkout-button thm-btn thm-btn__2 no-icon br-0 alt wc-forward">
+                                        <span class="btn-wrap">
+                                            <span>Proceed to Checkout</span>
+                                            <span>Proceed to Checkout</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end cart-section -->
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handle remove item button click
+        $('.remove-item-btn').click(function (e) {
+            e.preventDefault();
+
+            var $item = $(this).closest('.basket-item');
+            var productId = $item.data('product-id');
+
+            $.ajax({
+                url: '@Url.Action("RemoveItem", "Shop")',
+                type: 'POST',
+                data: { productId: productId },
+                success: function () {
+                    $item.remove();
+                    updateCartTotals();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error removing item:', error);
+                    alert('There was an error removing the item. Please try again.');
+                }
+            });
+        });
+
+        // Handle quantity change button click
+        $('.btn-change-quantity').click(function (e) {
+            e.preventDefault();
+
+            var $item = $(this).closest('.basket-item');
+            var $input = $item.find('input[name="number"]');
+            var action = $(this).data('action');
+            var newVal = parseInt($input.val());
+
+            if (action === 'increase') {
+                newVal++;
+            } else if (action === 'decrease' && newVal > 1) {
+                newVal--;
+            }
+
+            var productId = $item.data('product-id');
+
+            $.ajax({
+                url: action === 'increase' ? '@Url.Action("IncreaseItem", "Shop")' : '@Url.Action("DecreaseItem", "Shop")',
+                type: 'POST',
+                data: { productId: productId },
+                success: function () {
+                    $input.val(newVal);
+                    updateItemTotal($item);
+                    updateCartTotals();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error updating item quantity:', error);
+                    alert('There was an error updating the quantity. Please try again.');
+                }
+            });
+        });
+
+        // Update item total
+        function updateItemTotal($item) {
+            var price = parseFloat($item.find('.product-price .woocommerce-Price-amount').text().replace('$', ''));
+            var quantity = parseInt($item.find('input[name="number"]').val());
+            var total = price * quantity;
+            $item.find('.product-subtotal .woocommerce-Price-amount').text('$' + total.toFixed(2));
+        }
+
+        // Update cart totals
+        function updateCartTotals() {
+            var subtotal = 0;
+            $('#cart-items .basket-item').each(function () {
+                var price = parseFloat($(this).find('.product-price .woocommerce-Price-amount').text().replace('$', ''));
+                var quantity = parseInt($(this).find('input[name="number"]').val());
+                subtotal += price * quantity;
+            });
+
+            var total = subtotal;
+
+            $('.cart-subtotal .woocommerce-Price-amount').text('$' + subtotal.toFixed(2));
+            $('.order-total .woocommerce-Price-amount').text('$' + total.toFixed(2));
+        }
+    });
+</script>

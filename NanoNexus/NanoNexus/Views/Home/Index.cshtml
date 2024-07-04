@@ -1,0 +1,398 @@
+﻿@using NanoNexus.ViewModels
+@model HomeVm
+@{
+    var dPrice = Model.Products.FirstOrDefault().DiscountPercent > 0 ? Model.Products.FirstOrDefault().Price - Model.Products.FirstOrDefault().Price * Model.Products.FirstOrDefault().DiscountPercent / 100 : 0;
+    int counter = 2;
+}
+        <main>
+
+            <!-- hero start -->
+            <div class="hero hero__height ul_li" data-background="~/assets/img/bg/hero_bg.jpg">
+                <div class="container">
+
+                    <div class="row align-items-center mt-none-30">
+                        <div class="col-lg-9 mt-30">
+                            <div class="row align-items-center flex-row-reverse mt-none-30">
+                                <div class="col-lg-7 mt-30">
+                                    <div class="hero__product">
+                                        <div class="hero__product-wrap">
+                                            <div class="hero__product-carousel">
+                                        @foreach (var item in Model.Sliders)
+                                        {
+                                            <div class="hero__product-item">
+                                                <img width="400" height="300" src="~/uploads/sliders/@item.ImageUrl" alt="">
+                                            </div>
+                                        }
+                                                
+                                            </div>
+                                            <div class="hero__product-carousel-nav">
+                                        @foreach (var item in Model.Sliders)
+                                        {
+                                                <div class="hero__product-item-nav">
+                                                    <div class="image">
+                                                    <img src="~/uploads/sliders/@item.ImageUrl" alt="">
+                                                    </div>
+                                                </div>
+                                        }
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 mt-30">
+                                    <div class="hero__content">
+                                        <span class="subtitle">100% Best Product</span>
+                                        <h2 class="title">@Model.Products.FirstOrDefault().Name</h2>
+                                <h2>@Model.Products.FirstOrDefault().Brand.Name</h2>
+                                <h3 class="price"> $@Model.Products.FirstOrDefault().Price <span>
+                                        @(Model.Products.FirstOrDefault().DiscountPercent > 0 ? dPrice : "")
+                                    </span></h3>
+                                        <div class="mxw_343 mb-20">
+                                        </div>
+                                        <a class="hero__btn" asp-action="Index" asp-controller="Shop">Shop Now <i class="far fa-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-30">
+                            <div class="hot-deal__slide-wrap style-2 bg-white ">
+                                <h2 class="section-heading mb-25"><span>Top Product</span></h2>
+                                <div class="hot-deal__slide tx-arrow">
+                                    @foreach (var item in Model.Products)
+                            {
+
+                                <div class="hot-deal__item text-center">
+                                    <div class="thumb">
+                                        <a asp-action="Detail" asp-controller="Shop" asp-route-id="@item.Id">
+                                            <img src="~/uploads/products/@item.ProductImages.FirstOrDefault(x=>x.IsPoster==true).ImageUrl" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="rating-star ul_li_center mr-10">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="far fa-star"></i></li>
+                                            <li><i class="far fa-star"></i></li>
+                                        </ul>
+                                        <h2 class="product__title"><a asp-action="detail" asp-controller="Shop">@item.Category.Name</a></h2>
+                                        <h2 class="product__title"><a asp-action="detail"asp-controller="Shop">@item.Name<br />@item.Brand.Name</a></h2>
+                                        @if (item.DiscountPercent != 0)
+                                        {
+                                            <h4 class="product__price mb-20"><span class="new">$@(item.Price - item.Price * item.DiscountPercent / 100)</span><span class="old">$$@item.Price</span></h4>
+                                        }
+                                        else
+                                        {
+                                            <h4 class="product__price mb-20"><span class="new"></span><span class="old">$$@item.Price</span></h4>
+                                        }
+
+                                        <div class="mxw_216 m-auto">
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- hero end -->
+            
+            <!-- feature start -->
+            <div class="feature pt-40 pb-30">
+                <div class="container">
+                    <div class="feature__wrap ul_li">
+                        <div class="feature__item ul_li">
+                            <div class="icon">
+                                <img src="~/assets/img/icon/feat_01.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Free Shipping</h3>
+                                <p>Free shipping over $100</p>
+                            </div>
+                        </div>
+                        <div class="feature__item ul_li">
+                            <div class="icon">
+                                <img src="~/assets/img/icon/feat_02.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Payment Secure</h3>
+                                <p>Got 100% Payment Safe</p>
+                            </div>
+                        </div>
+                        <div class="feature__item ul_li">
+                            <div class="icon">
+                                <img src="~/assets/img/icon/feat_03.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Support 24/7</h3>
+                                <p>Top quialty 24/7 Support</p>
+                            </div>
+                        </div>
+                        <div class="feature__item ul_li">
+                            <div class="icon">
+                                <img src="~/assets/img/icon/feat_04.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>100% Money Back</h3>
+                                <p>Cutomers Money Backs</p>
+                            </div>
+                        </div>
+                        <div class="feature__item ul_li">
+                            <div class="icon">
+                                <img src="~/assets/img/icon/feat_05.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Quality Products</h3>
+                                <p>We Insure Product Quailty</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- feature end -->
+
+            <!-- tab product start -->
+            <div class="tab-product pt-40 pb-40">
+                <div class="container">
+                    <div class="product__nav-wrap ul_li_between mb-20">
+                        <h2 class="section-heading"><span>Hot <span>New Arrival</span> You May Like</span></h2>
+                        <ul class="product__nav rd-tab-nav nav nav-tabs" id="vd-myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="vd-tab-02" data-bs-toggle="tab" data-bs-target="#vd-tab2" type="button" role="tab" aria-controls="vd-tab2" aria-selected="false">Best Seller</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="vd-tab-03" data-bs-toggle="tab" data-bs-target="#vd-tab3" type="button" role="tab" aria-controls="vd-tab3" aria-selected="false">Top</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="vd-tab-04" data-bs-toggle="tab" data-bs-target="#vd-tab4" type="button" role="tab" aria-controls="vd-tab4" aria-selected="false">New Arrivals</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vd-products">
+                        <div class="tab-content tab_has_slider" id="vd-myTabContent">
+                            
+                            <div class="tab-pane fade" id="vd-tab2" role="tabpanel" aria-labelledby="vd-tab-02">
+                                <div class="tab-product__slide tx-arrow">
+                                   @foreach (var item in Model.Products.Where(x=>x.IsBestSeler == true))
+                            {
+                                <div class="tab-product__item tx-product text-center">
+                                    <div class="thumb">
+                                        <a asp-action="Detail" asp-controller="Shop" asp-route-id="@item.Id"><img src="~/uploads/products/@item.ProductImages?.FirstOrDefault(x=>x.IsPoster)?.ImageUrl" alt=""></a>
+                                    </div>
+                                    <div class="content">
+
+                                        <h3 class="title">@item.Name<a asp-action ="detail" asp-controller="Shop">Is Best Seler</a></h3>
+                                        @if (item.DiscountPercent != 0)
+                                        {
+                                            <span class="price">( @(item.Price - item.Price * item.DiscountPercent / 100) <span class="old-price">@item.Price</span> )</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="price"> <span class="old-price">@item.Price</span> )</span>
+                                        }
+                                    </div>
+                                    <ul class="product__action">
+
+                                        <li><a href="#!"><i class="far fa-shopping-basket"></i></a></li>
+
+                                    </ul>
+                                    <span class="badge-skew">New</span>
+                                </div>
+                            }
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="vd-tab3" role="tabpanel" aria-labelledby="vd-tab-03">
+                                <div class="tab-product__slide tx-arrow">
+                                    @foreach (var item in Model.Products.Where(x=>x.IsTop == true))
+                            {
+                                <div class="tab-product__item tx-product text-center">
+                                    <div class="thumb">
+                                        <a asp-action="Detail" asp-controller="Shop" asp-route-id="@item.Id"><img src="~/uploads/products/@item.ProductImages?.FirstOrDefault(x=>x.IsPoster)?.ImageUrl" alt=""></a>
+                                    </div>
+                                    <div class="content">
+
+                                        <h3 class="title">@item.Name<a asp-action="detail" asp-controller="Shop">Is Top</a></h3>
+                                        @if (item.DiscountPercent != 0)
+                                        {
+                                            <span class="price">( @(item.Price - item.Price * item.DiscountPercent / 100) <span class="old-price">@item.Price</span> )</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="price"> <span class="old-price">@item.Price</span> )</span>
+                                        }
+
+                                    </div>
+                                    <ul class="product__action">
+
+                                        <li><a href="#!"><i class="far fa-shopping-basket"></i></a></li>
+
+                                    </ul>
+                                    <span class="badge-skew">New</span>
+                                </div>
+                            }
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show active" id="vd-tab4" role="tabpanel" aria-labelledby="vd-tab-04">
+                                <div class="tab-product__slide tx-arrow">
+                                    @foreach (var item in Model.Products.Where(x=>x.IsNewArrivals == true))
+                            {
+                                <div class="tab-product__item tx-product text-center">
+                                    <div class="thumb">
+                                        <a asp-action="Detail" asp-controller="Shop" asp-route-id="@item.Id"><img src="~/uploads/products/@item.ProductImages?.FirstOrDefault(x=>x.IsPoster)?.ImageUrl" alt=""></a>
+                                    </div>
+                                    <div class="content">
+                                   
+                                        <h3 class="title">@item.Name<a asp-action="detail"asp-controller="Shop">Is New Arrivals</a></h3>
+                                        @if (item.DiscountPercent != 0)
+                                        {
+                                            <span class="price">( @(item.Price - item.Price * item.DiscountPercent / 100) <span class="old-price">@item.Price</span> )</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="price"> <span class="old-price">@item.Price</span> )</span>
+                                        }
+                                    </div>
+                                    <ul class="product__action">
+
+                                        <li><a asp-action="AddToBasket" asp-controller="shop" asp-route-productId="@item.Id" class="add-to-basket"><i class="far fa-shopping-basket"></i></a></li>
+                                       
+                                    </ul>
+                                    <span class="badge-skew">New</span>
+                                </div>
+                            }
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tab product end -->
+
+            <!-- rd slide product start -->
+            <div class="rd-slide-product">
+                <div class="container">
+                    <div class="row mt-none-30">
+                <div class="col-lg-3 mt-30">
+                    <div class="product-category" data-background="assets/img/bg/cat_bg.jpg">
+                        <h2 class="section-heading mb-25"><span><span>Catagory</span></span></h2>
+                        <ul class="list-unstyled">
+                            @foreach (var item in Model.Categories)
+                            {
+
+                                <li class="cat-item-has-children"><a asp-action="index" asp-controller="Shop" asp-route-categoryid="@item.Id"><img src="@item.Icon" alt="">@item.Name</a></li>
+                            }
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-9 mt-30">
+                    <div class="rd-slide-products">
+                        <h2 class="section-heading mb-25"><span>Trending Product</span></h2>
+                        <div class="rd-product__slide tx-arrow">
+                          @foreach (var item in Model.Products)
+                            {
+                                <div class="rd-product__slide-item">
+                                    <div class="product__item">
+                                        <div class="product__img text-center pos-rel">
+                                            <a asp-action="Detail" asp-controller="Shop" asp-route-id="@item.Id"><img src="~/uploads/products/@item.ProductImages.FirstOrDefault(x=>x.IsPoster==true).ImageUrl" alt=""></a>
+                                        </div>
+                                        <div class="product__content">
+                                            <div class="product__review ul_li_center">
+                                                <ul class="rating-star ul_li mr-10">
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                </ul>
+                                               
+                                            </div>
+                                            <h2 class="product__title"><a asp-action="Detail" asp-controller="Shop" asp-route-id="@item.Id">@item.Category.Name</a></h2>
+                                            <h2 class="product__title"><a asp-action="Detail" asp-controller="Shop" asp-route-id="@item.Id">@item.Name<br />@item.Brand.Name</a></h2>
+                                            @if (item.DiscountPercent != 0)
+                                            {
+                                                <h4 class="product__price mb-20"><span class="new">$@(item.Price - item.Price * item.DiscountPercent / 100)</span><span class="old">$$@item.Price</span></h4>
+                                            }
+                                            else
+                                            {
+                                                <h4 class="product__price mb-20"><span class="new"></span><span class="old">$$@item.Price</span></h4>
+                                            }
+                                        </div>
+                                        <ul class="product__action">
+                                            <li><a asp-action="addtobasket" asp-controller="shop" asp-route-returnUrl="@Context.Request.Path.Value" asp-route-productId="@item.Id" class="add-to-basket"><i class="far fa-shopping-basket"></i></a></li>
+                                        </ul>
+                                        <span class="badge-skew">New</span>
+                                    </div>
+
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+
+            <!-- rd slide product end -->
+
+            
+
+           
+
+            
+
+
+            <!-- brand start -->
+            <div class="brand pt-80 pb-80">
+                <div class="container">
+                    <div class="brand__active">
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img src="~/assets/img/brand/img_01.png" alt="">
+                            </a>
+                        </div>
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img src="~/assets/img/brand/img_02.png" alt="">
+                            </a>
+                        </div>
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img src="~/assets/img/brand/img_03.png" alt="">
+                            </a>
+                        </div>
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img src="~/assets/img/brand/img_04.png" alt="">
+                            </a>
+                        </div>
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img src="~/assets/img/brand/img_05.png" alt="">
+                            </a>
+                        </div>
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img src="~/assets/img/brand/img_06.png" alt="">
+                            </a>
+                        </div>
+                        <div class="brand__item">
+                            <a href="#!">
+                                <img src="~/assets/img/brand/img_03.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- brand end -->
+
+        </main>
+
+        

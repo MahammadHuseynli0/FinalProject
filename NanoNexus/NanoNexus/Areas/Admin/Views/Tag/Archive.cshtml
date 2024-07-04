@@ -1,0 +1,43 @@
+﻿
+@using NanoNexus.Business.DTOs.TagDTOs
+@model List<TagGetDTO>
+@{
+    int counter = 1;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <a asp-action="index" asp-controller="Tag" class="btn btn-primary">Index</a>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@(counter++)</th>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>
+                                <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-warning">Update</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger  item-delete">Delete</a>
+                                <a asp-action="Return" asp-route-id="@item.Id" class="btn btn-info">Return</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

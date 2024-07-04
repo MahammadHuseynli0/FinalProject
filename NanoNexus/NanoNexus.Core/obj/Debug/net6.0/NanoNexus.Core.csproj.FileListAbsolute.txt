@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\bin\Debug\net6.0\NanoNexus.Core.deps.json
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\bin\Debug\net6.0\NanoNexus.Core.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\bin\Debug\net6.0\NanoNexus.Core.pdb
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\NanoNexus.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\NanoNexus.Core.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\NanoNexus.Core.AssemblyInfo.cs
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\NanoNexus.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\NanoNexus.Core.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\refint\NanoNexus.Core.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\NanoNexus.Core.pdb
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\ref\NanoNexus.Core.dll
+C:\Users\user\source\repos\NanoNexus\NanoNexus.Core\obj\Debug\net6.0\NanoNexus.Core.csproj.AssemblyReference.cache

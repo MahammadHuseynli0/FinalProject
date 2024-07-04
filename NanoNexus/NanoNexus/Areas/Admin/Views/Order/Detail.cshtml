@@ -1,0 +1,59 @@
+﻿@using NanoNexus.Core.Models
+@model Order
+@{
+    int counter = 0;
+}
+<h1>Detail: </h1>
+
+
+<div class="container-fluid">
+    <div class="card" style="width: 100rem;>
+        <div class="card-body">
+            <h5 class="card-title">@Model.Id</h5>
+            <p class="card-text"> <span class="fw-bold text-dark">Name: </span>       @Model.Name </p>
+            <p class="card-text"> <span class="fw-bold text-dark">Surname:</span>    @Model.Surname </p>
+            <p class="card-text"> <span class="fw-bold text-dark">Email: </span>     @Model.Email </p>
+            <p class="card-text"> <span class="fw-bold text-dark">Phone:</span>     @Model.Phone </p>
+            <p class="card-text"> <span class="fw-bold text-dark">Address:</span>     @Model.Address </p>
+            <p class="card-text"> <span class="fw-bold text-dark">Country: </span>    @Model.Country </p>
+            <p class="card-text"> <span class="fw-bold text-dark">ZipCode:</span>     @Model.ZipCode </p>
+            <p class="card-text"> <span class="fw-bold text-dark">Note: </span>     @Model.Note </p>
+            <p class="card-text"> <span class="fw-bold text-dark">TotalPrice:</span>  @Model.TotalPrice AZN </p>
+
+            <div style="border: 1px solid #000">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product Name </th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Discount Percent </th>
+                            <th scope="col">Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model.OrderItems)
+                    {
+                            <tr>
+                                <th scope="row">@(counter++)</th>
+                                <th scope="row">@item.ProductName</th>
+                                <th scope="row">@item.Price AZN</th>
+                                <th scope="row">@item.DiscountPercent %</th>
+                                <th scope="row">@item.Count</th>
+                            </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            </>
+
+            <div class="card-body">
+                <a asp-action="accept" asp-route-id="@Model.Id" asp-controller="Order" class="btn btn-success">Accept</a>
+                <a asp-action="reject" asp-route-id="@Model.Id" asp-controller="Order" class="btn btn-danger">Reject</a>
+                <a asp-action="index" asp-route-id="@Model.Id" asp-controller="Order" class="btn btn-primary">Go back</a>
+            </div>
+        </div>
+    </div>

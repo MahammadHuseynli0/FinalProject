@@ -1,0 +1,237 @@
+﻿@using NanoNexus.ViewModels
+@model ShopVm
+@{
+    int counter = 0;
+}
+   
+
+
+
+<!-- start shop-section -->
+<section class="shop-section pb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="shop-area shop-left-sidebar clearfix">
+                    <div class="woocommerce-content-wrap">
+                        <div class="woocommerce-toolbar-top">
+                            <p class="woocommerce-result-count">Showing 1–12 of 70 results</p>
+                            <div class="products-sizes">
+                                <a href="#!" class="grid-4">
+                                    <div class="grid-draw">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="grid-draw">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="grid-draw">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="#!" class="grid-3 active">
+                                    <div class="grid-draw">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="grid-draw">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="grid-draw">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="#!" class="list-view">
+                                    <div class="grid-draw-line">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="grid-draw-line">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="grid-draw-line">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                             <li class="dropdown">
+                               
+                                <form asp-action="Index" asp-controller="Shop"
+                                      asp-route-categoryId="@Model.CategoryId"
+                                      asp-route-search="@Model.Search">
+                                    <select style="width:200px" name="order" onchange="this.form.submit()" class="form-select" aria-label="Default select example">
+
+                                        <option value="">Sort by Default</option>
+                                        <option value="1">Sort by Price</option>
+                                        <option value="2">Sort by Name</option>
+                                        <option value="3">Sort by is new arrivals</option>
+                                    </select>
+                                </form>
+                    </li>
+                        </div>
+                        <div class="woocommerce-content-inner">
+                            <ul class="products three-column clearfix">
+                             @foreach (var item in Model.PaginatedProducts)
+                                {
+                                    <li class="product">
+                                        <div class="product-holder">
+                                            <a asp-action="detail" asp-route-id="@item.Id" asp-controller="shop" title=""><img src="@Url.Content("~/uploads/products/"+@item.ProductImages?.Where(x => x.IsPoster = true).FirstOrDefault()?.ImageUrl)" alt=""></a>
+                                            <ul class="product__action">
+                                                <li>
+                                                    <a asp-action="addtobasket" asp-controller="shop" asp-route-productId="@item.Id" class="add-to-basket"><i class="far fa-shopping-basket"></i></a>
+                                    </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product__progress progress color-primary">
+                                               
+                                            </div>
+                                            <div class="cat-name">
+                                                <a href="#" title="">@item.Category.Name</a>
+                                            </div>
+                                            <h2 class="product__title"><a href="#" title="">@item.Name<br />@item.Brand.Name</a></h2>
+                                            @if (item.DiscountPercent != 0)
+                                            {
+                                                <h4 class="product__price"><span class="new">$@(item.Price - item.Price * item.DiscountPercent / 100)</span><span class="old">$@item.Price</span></h4>
+                                            }
+                                            else
+                                            {
+                                                <h4 class="product__price"><span class="new">$@item.Price</span><span class="old"></span></h4>
+
+                                                <div class="price">
+                                                    <span class="sale">$@item.Price</span>
+                                                </div>
+                                            }
+                                      
+                                        </div>
+                                    </li>
+                                }
+                           
+                            </ul>
+                        </div>
+                        <div class="pagination_wrap pt-20">
+                            <ul>
+                                <li><a asp-action="Index" asp-route-page="@(Model.PaginatedProducts.ActivePage - 1)"><i class="far fa-angle-double-left"></i></a></li>
+                                @for (int i = 1; i <= Model.PaginatedProducts.TotalPageCount; i++)
+                                {
+                                    <li class=" @(Model.PaginatedProducts.ActivePage == i ? "active" : "")">
+                                        <a class="waves-effect" asp-action="Index" asp-route-page="@i">@i</a>
+                                    </li>
+                                }
+                                <li><a asp-action="Index" asp-route-page="@(Model.PaginatedProducts.ActivePage + 1)"><i class="far fa-angle-double-right"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shop-sidebar">
+                        <div class="widget">
+                            <div class="widget__add">
+                                <div class="content">
+                                    <span>Trending</span>
+                                    <h3><span>Laptop</span> <br> Collection</h3>
+                                    <a class="thm-btn no-icon" href="#!">
+                                        <span class="btn-wrap">
+                                            <span>Buy Now</span>
+                                            <span>Buy Now</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="image">
+                                    <img class="add_img" src="~/assets/img/product/img_177.png" alt="">
+                                    <img class="add_shape" src="~/assets/img/shape/add_shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <h5 class="widget__title">
+                                <span>Filtering</span>
+                            </h5>
+                        </div>
+                        <form asp-action="index" asp-controller="Shop" method="get">
+                        <div class="widget widget_price_filter">
+                            <h2 class="widget__title">
+                                    <span>
+                                        <div class="row">
+                                            <div>
+                                                <button type="submit" class="filter-btn btn btn-outline-warning">Filter</button>
+                                            </div>
+                                        </div>
+                                    </span>
+                            </h2>
+                                <div class="price search-filter-input">
+									<div class="container mt-3">
+										<div class="row">
+											<input type="number" name="minPrice" placeholder="Min Price">
+											<input type="number" name="maxPrice" placeholder="Max Price">
+										</div>
+									</div>
+								</div>
+                        </div>
+                        <div class="widget">
+                            <h2 class="widget__title">
+                                <span>Color</span>
+                            </h2>
+                            <div class="widget-content">
+                                <div style="height: 5px"></div>
+                                <ul class="widget__title">
+                                    @foreach (var item in Model.Colors)
+                                    {
+                                        <li class="check-box">
+                                            <input type="checkbox" id="color_@item.Id" name="selectedColors" value="@item.Id">
+                                            <label for="color_@item.Id">@item.Name</label>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                            <div class="widget">
+                                <h2 class="widget__title">
+                                    <span>Category</span>
+                                </h2>
+                                <ul class="widget__category">
+                                    @foreach (var item in Model.Categories)
+                                    {
+                                        <li><a asp-action="Index" asp-controller="Shop" asp-route-categoryid="@item.Id">@item.Name<img src="@item.Icon" width="30" height="30" alt="" /></a></li>
+                                    }
+                                </ul>
+                            </div>
+                           
+                        <div class="widget">
+                            <h2 class="widget__title">
+                                <span>Brands</span>
+                            </h2>
+                            <div class="checkbox">
+                                @foreach (var item in Model.Brands)
+                                {
+                                    <div class="checkbox__item ul_li">
+                                        <input type="checkbox" id="brand_@item.Id" name="selectedBrands" value="@item.Id" />
+                                        <label for="brand_@item.Id">@item.Name</label>
+                                    </div>
+                                }
+                            </div>
+                           
+                        </form>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end shop-section -->

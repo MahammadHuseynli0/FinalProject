@@ -1,0 +1,33 @@
+﻿@using NanoNexus.ViewModels
+@model MemberLoginVm
+<div class="col-lg-6 mt-30">
+    <div class="account__wrap pl-60">
+        <h2 class="account__title">Login here</h2>
+        <form asp-action="Login" method="post">
+            <div class="account__input-field">
+                <label for="lemail">Email Address</label>
+                <input asp-for="Email" id="lemail" class="form-control" placeholder="Enter Email Address" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="account__input-field">
+                <label for="lpassword">Password</label>
+                <input asp-for="Password" id="lpassword" type="password" class="form-control" placeholder="Enter Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly"  style="color: red;"></div>
+            <div class="account__input-field">
+                <input asp-for="RememberMe" id="lcheckbox" type="checkbox" checked>
+                <label class="form-check-label" for="lcheckbox">Remember Me?</label>
+            </div>
+            <div class="account__btn">
+                <button type="submit" class="thm-btn thm-btn__2">
+                    <span class="btn-wrap">
+                        <span>Login here</span>
+                    </span>
+                </button>
+            
+            </div>
+        </form>
+    </div>
+</div>
+<!-- account end -->	

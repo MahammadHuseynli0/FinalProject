@@ -1,0 +1,389 @@
+﻿@using NanoNexus.Core.Models
+@using NanoNexus.ViewModels
+@using NanoNexus.ViewServices
+
+@inject LayoutService service
+@{
+    List<BasketItemVm> basketItemVms = await service.Basket();
+    var settings = await service.GetSettingsAsync();
+    // List<Setting> settings = await service.GetSetting();
+    // AppUser appUser = await service.GetUserData();
+    
+    decimal? itemAmount = basketItemVms.Sum(item => item.Price - item.Price * item.DiscountPercent / 100);
+    decimal? totalAmount = basketItemVms.Sum(item => itemAmount * item.Count);
+}
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Radios - Electronics Store WooCommerce Template</title>
+
+    <link rel="shortcut icon" href="~/assets/img/favicon.png" type="images/x-icon" />
+
+    <!-- css include -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="~/assets/css/animate.css">
+    <link rel="stylesheet" href="~/assets/css/metisMenu.css">
+    <link rel="stylesheet" href="~/assets/css/uikit.min.css">
+    <link rel="stylesheet" href="~/assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/assets/css/slick.css">
+    <link rel="stylesheet" href="~/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="body_wrap">
+
+        <!-- preloder start  -->
+        <div class="preloder_part">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+        <!-- preloder end  -->
+        <!-- back to top start -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- back to top end -->
+        <!-- header start -->
+        <header class="header header__style-one">
+            <div class="header__top-info-wrap d-none d-lg-block">
+                <div class="container">
+                    <div class="header__top-info ul_li_between mt-none-10">
+                        <ul class="ul_li mt-10">
+                            <li><i class="far fa-map-marker-alt"></i>Store Location</li>
+                            <li><i class="far fa-truck"></i>Track Your Order</li>
+                            <li><i class="fas fa-phone"></i>Call Us For Enquiry</li>
+                            <li><i class="fas fa-heart"></i>Welcome to Radios. We provides Best Electronics item</li>
+                        </ul>
+                        <div class="header__top-right ul_li mt-10">
+                           
+                            <div class="header__social ml-25">
+                                <a href="@settings.FirstOrDefault(x=> x.Key == "PinterestLink").Value"><i class="fa fa-pinterest"></i></a>
+                                <a href="@settings.FirstOrDefault(x=> x.Key == "FacebookLink").Value"><i class="fa fa-facebook"></i></a>
+                                <a href="@settings.FirstOrDefault(x=> x.Key == "XLink").Value"><i class="fa fa-twitter"></i></a>
+                                <a href="@settings.FirstOrDefault(x=> x.Key == "GoogleLink").Value"><i class="fa fa-google-plus"></i></a>
+                                <a href="@settings.FirstOrDefault(x=> x.Key == "InstagramLink").Value"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__middle ul_li_between justify-content-xs-center">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="~/assets/img/logo/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <form class="header__search-box" asp-action="Index" method="get" asp-controller="Shop" class="form-search" accept-charset="utf-8">
+                            <input type="text" name="search" id="search" placeholder="Search For Products"
+                                   required />
+                            <button type="submit">
+                                <i class="far fa-search"></i>
+                            </button>
+                        </form>
+                    
+
+
+              
+    
+                  
+                    <div class="header__icons ul_li">
+                        <div class="icon">
+                            <a asp-action="Register" asp-controller="Account"> <img src="~/assets/img/icon/user.svg" alt=""></a>
+                        </div>
+                        <div class="cart_btn icon">
+                            <img src="~/assets/img/icon/shopping_bag.svg" alt="">
+                            <span class="count">@basketItemVms.Count</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__cat-wrap" data-uk-sticky="top: 250; animation: uk-animation-slide-top;">
+                <div class="container">
+                    <div class="header__wrap ul_li_between">
+                        <div class="header__cat ul_li">
+                            <div class="hamburger_menu">
+                                <a href="javascript:void(0);" class="active">
+                                    <div class="icon bar">
+                                        <span><i class="fal fa-bars"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <ul class="category ul_li">
+                                <li><a href="#!"><span><img src="~/assets/img/icon/hc_01.svg" alt=""></span>Laptops & Computers</a></li>
+                                <li><a href="#!"><span><img src="~/assets/img/icon/hc_02.svg" alt=""></span>CC Tv & Camera</a></li>
+                                <li><a href="#!"><span><img src="~/assets/img/icon/hc_03.svg" alt=""></span>Home Equipment</a></li>
+                                <li><a href="#!"><span><img src="~/assets/img/icon/hc_04.svg" alt=""></span>Tv & Audios</a></li>
+                                <li><a href="#!"><span><img src="~/assets/img/icon/hc_05.svg" alt=""></span>Printers & Ink</a></li>
+                                <li><a href="#!"><span><img src="~/assets/img/icon/hc_06.svg" alt=""></span>Gaming & Fun</a></li>
+                            </ul>
+                        </div>
+                        <div class="login-sign-btn">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="thm-btn" asp-action="Logout" asp-controller="Account">
+                                    <span class="btn-wrap">
+                                        <span>Logout</span>
+                                        <span>Logout</span>
+                                    </span>
+                                </a>
+                            }
+                            else
+                            {
+                                <a class="thm-btn" asp-action="Login" asp-controller="Account">
+                                    <span class="btn-wrap">
+                                        <span>Login</span>
+                                        <span>Login</span>
+                                    </span>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- slide-bar start -->
+        <aside class="slide-bar">
+            <div class="close-mobile-menu">
+                <a href="javascript:void(0);"><i class="fal fa-times"></i></a>
+            </div>
+
+            <!-- sidebar-info start -->
+            <div class="cart_sidebar">
+                <button type="button" class="cart_close_btn"><i class="fal fa-times"></i></button>
+                <h2 class="heading_title text-uppercase">Cart Items - <span>@basketItemVms.Count</span></h2>
+                <div class="cart_items_list">
+                    @foreach (var item in basketItemVms)
+                    {
+                        <div data-id="@item.ProductId" class="cart_item">
+                            <div class="item_image">
+                                <img src="~/uploads/products/@item.ImageUrl" alt="image_not_found">
+                            </div>
+                            <div class="item_content">
+                                <h4 class="item_title">
+                                    @item.Name
+                                </h4>
+                                <div>
+                                    <span class="count">@item.Count x</span>
+                                    <span class="item_price"> $@(item.Price - item.Price * item.DiscountPercent / 100)</span>
+                                    <button type="button" class="remove_btn" onclick="removeFromBasket(@item.ProductId)"><i class="fal fa-times"></i></button>
+                                    <input hidden class="item-subtotal" value="@(item.Price - item.Price * item.DiscountPercent / 100)" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <@* div class="total_price text-uppercase">
+                    <span>Sub Total:</span>
+                    <span>$@totalAmount</span>
+                </div> *@
+                <ul class="btns_group ul_li">
+                    <li>
+                        <a asp-action="ShowBasket" asp-controller="Shop" class="thm-btn">
+                            <span class="btn-wrap">
+                                <span>View Cart</span>
+                                <span>View Cart</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="CheckOut" asp-controller="Shop" class="thm-btn thm-btn__black">
+                            <span class="btn-wrap">
+                                <span>Checkout</span>
+                                <span>Checkout</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar-info end -->
+            <!-- side-mobile-menu start -->
+            <nav class="side-mobile-menu">
+                <div class="header-mobile-search">
+                    <form role="search" method="get" asp-action="Index" asp-controller="Shop">
+                        <input type="text" placeholder="Search Keywords">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </form>
+                </div>
+                <ul id="mobile-menu-active">
+                    <li>
+                        <a asp-action="Index" asp-controller="Home">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a asp-action="Index" asp-controller="Shop">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a asp-action="Index" asp-controller="Shop">Shop</a></li>
+                            <li><a asp-action="ShowBasket" asp-controller="Shop">Shop Cart</a></li>
+                            <li><a asp-action="CheckOut" asp-controller="Shop">CheckOut</a></li>
+                            <li><a asp-action="Profile" asp-controller="Account">Profile</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li><a asp-action="Index" asp-controller="Contact">Contact</a></li>
+                    <li><a asp-action="Register" asp-controller="Account">Account</a></li>
+                </ul>
+            </nav>
+            <!-- side-mobile-menu end -->
+        </aside>
+        <div class="body-overlay"></div>
+        <!-- slide-bar end -->
+        @RenderBody()
+        <!-- footer start -->
+        <footer class="footer" data-background="~/assets/img/bg/footer_bg.jpg">
+            <div class="newslater newslater__border pt-30 pb-30">
+                <div class="container">
+                    <div class="newslater__two ul_li">
+                        <div class="newslater__content">
+                            <h2 class="title">We are ready to <span>help</span></h2>
+                            <p>For information Consult with our expert members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer__main pt-90 pb-90">
+                    <div class="row mt-none-40">
+                        <div class="footer__widget col-lg-3 col-md-6 mt-40">
+                            <div class="footer__logo mb-20">
+                                <a href="index.html"><img src="~/assets/img/logo/logo.svg" alt=""></a>
+                            </div>
+                           
+                            <ul class="footer__info mt-30">
+                                <li><i class="lotus-icon-location"></i> @settings.FirstOrDefault(x => x.Key == "Address").Value"</li>
+
+                            </ul>
+                            <div class="apps-img mt-15 ul_li">
+                                <div class="app mt-15">
+                                    <a href="#!"><img src="~/assets/img/icon/google_play.png" alt=""></a>
+                                </div>
+                                <div class="app mt-15">
+                                    <a href="#!"><img src="~/assets/img/icon/app_store.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__widget col-lg-3 col-md-6 mt-40">
+                            <h2 class="title">Find It Fast</h2>
+                            <ul class="quick-links">
+                                <li><a asp-action="Index" asp-controller="Shop">Laptops & Computers</a></li>
+                                <li><a asp-action ="Index" asp-controller="Shop">Cameras & Photography</a></li>
+                                <li><a asp-action ="Index" asp-controller="Shop">Smart Phones & Tablets</a></li>
+                                <li><a asp-action="Index" asp-controller="Shop">Video Games & Consoles</a></li>
+                                <li><a asp-action="Index" asp-controller="Shop">TV & Audio</a></li>
+                        </div>
+
+                        <div class="footer__widget col-lg-3 col-md-6 mt-40">
+                            <h2 class="title">Quick Links</h2>
+                            <ul class="quick-links">
+                                <li><a href="#!">Your Account</a></li>
+                                <li><a href="#!">Returns & Exchanges</a></li>
+                                <li><a href="#!">Return Center</a></li>
+                                <li><a href="#!">Purchase History</a></li>                    
+                                <li><a href="#!">App Download</a></li>
+                                <li><a href="#!">Latest News Blog</a></li>
+                                <li><a href="#!">Shipping & Delivery</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="footer__bottom ul_li_center">
+                    <div class="footer__copyright mt-15">
+                        &copy; 2022 <a href="#!">Themexriver</a> . All Rights Reserved.
+                    </div>
+                    <div class="footer__social mt-15">
+                        <a href="@settings.FirstOrDefault(x=> x.Key == "PinterestLink").Value"><i class="fa fa-pinterest"></i></a>
+                        <a href="@settings.FirstOrDefault(x=> x.Key == "FacebookLink").Value"><i class="fa fa-facebook"></i></a>
+                        <a href="@settings.FirstOrDefault(x=> x.Key == "XLink").Value"><i class="fa fa-twitter"></i></a>
+                        <a href="@settings.FirstOrDefault(x=> x.Key == "GoogleLink").Value"><i class="fa fa-google-plus"></i></a>
+                        <a href="@settings.FirstOrDefault(x=> x.Key == "InstagramLink").Value"><i class="fa fa-instagram"></i></a>
+                    </div>
+                   
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+        <!-- start newsletter-popup-area-section -->
+        <section class="newsletter-popup-area-section">
+            <div class="newsletter-popup-area">
+                <div class="newsletter-popup-ineer">
+                    <button class="btn newsletter-close-btn"><i class="fal fa-times"></i></button>
+                    <div class="img-holder">
+                        <img src="~/assets/img/bg/newsletter.jpg" alt>
+                    </div>
+                    <div class="details">
+                        <h4>Get 45% discount shipped to your inbox</h4>
+                        <p>Subscribe to the radios eCommerce newsletter to receive timely updates to your favorite products</p>
+                        <form>
+                            <div>
+                                <input type="email" placeholder="Enter your email" />
+                                <button type="submit">Subscribe</button>
+                            </div>
+                            <div>
+                                <label class="checkbox-holder">
+                                    Don't show this popup again!
+                                    <input type="checkbox" class="show-message">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end newsletter-popup-area-section -->
+        <!-- start cookies-area -->
+        <div class="cookies-area">
+            <p> This website uses cookies to improve your experience. By using this website you agree to our <a href="#">Data Protection Policy</a>. </p>
+            <a href="#" class="read-more">Read more</a>
+            <div>
+                <button class="cookie-btn">Accept</button>
+            </div>
+        </div>
+        <!-- end cookies-area -->
+
+
+    </div>
+
+    <!-- jquery include -->
+    <script src="~/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="~/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/slick.js"></script>
+    <script src="~/assets/js/backToTop.js"></script>
+    <script src="~/assets/js/uikit.min.js"></script>
+    <script src="~/assets/js/resize-sensor.min.js"></script>
+    <script src="~/assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="~/assets/js/wow.min.js"></script>
+    <script src="~/assets/js/jqueryui.js"></script>
+    <script src="~/assets/js/touchspin.js"></script>
+    <script src="~/assets/js/countdown.js"></script>
+    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets/js/metisMenu.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/assets/js/basket.js" ></script>
+    <script src="~/assets/js/search.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <
+ 
+
+
+
+</body>
+
+
+</html>

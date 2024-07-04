@@ -1,0 +1,61 @@
+﻿@using NanoNexus.Business.Extension
+@using NanoNexus.Core.Models
+@model PaginatedList<ContactPost>
+@{
+    int counter = 1;
+}
+
+<div class="container">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Comment</th>
+                        <th scope="col">Answer</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@(counter++)</th>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.Email</td>
+                            <td>@item.Comment</td>
+                            <td>@item.Answer</td>
+                            <td>
+                                <a asp-action="Reply" asp-route-id="@item.Id" class="btn btn-info">Reply</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item @(Model.HasPrev == true ? "" : "disabled")">
+                        <a class="page-link" asp-action="Index" asp-route-page="@(Model.ActivePage - 1)" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+
+
+                    @for (int i = 1; i <= Model.TotalPageCount; i++)
+                    {
+                        <li class="page-item @(Model.ActivePage == i ? "active" : "")"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
+                    }
+
+                    <li class="page-item  @(Model.HasNext == true ? "" : "disabled")">
+                        <a class="page-link" asp-action="Index" asp-route-page="@(Model.ActivePage + 1)">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

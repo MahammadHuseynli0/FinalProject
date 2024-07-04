@@ -1,0 +1,111 @@
+﻿@using NanoNexus.Business.DTOs.ProductDTOs
+@model ProductUpdateDTO
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form asp-action="Update" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                    <input asp-for="Name" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Price</label>
+                    <input asp-for="Price" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">CostPrice</label>
+                    <input asp-for="CostPrice" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="CostPrice" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">DiscountPercent</label>
+                    <input asp-for="DiscountPercent" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="DiscountPercent" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">ShortDescription</label>
+                    <input asp-for="ShortDescription" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="Description" class="form-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" id="Description"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="TechnicalSpecs" class="form-label">Technical Specs</label>
+                    <textarea asp-for="TechnicalSpecs" class="form-control" id="TechnicalSpecs"></textarea>
+                    <span asp-validation-for="TechnicalSpecs" class="text-danger"></span>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" asp-for="IsBestSeler" class="form-check-input" id="IsBestSeler">
+                    <label class="form-check-label" for="IsBestSeler">IsBestSeler</label>
+                    <span asp-validation-for="IsBestSeler" class="text-danger"></span>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" asp-for="IsTop" class="form-check-input" id="IsTop">
+                    <label class="form-check-label" for="IsTop">IsTop</label>
+                    <span asp-validation-for="IsTop" class="text-danger"></span>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" asp-for="IsNewArrivals" class="form-check-input" id="IsNewArrivals">
+                    <label class="form-check-label" for="IsNewArrivals">Is New Arrivals</label>
+                    <span asp-validation-for="IsNewArrivals" class="text-danger"></span>
+                </div>             
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">ProductPosterImageFile</label>
+                    <input asp-for="ProductPosterImageFile" class="form-control" id="exampleInputEmail1">
+                    <div style="width:150px;margin:0 20px">
+                        <img style="max-width:100%" src="~/uploads/products/@Model.ProductImages?.Where(x=> x.IsPoster == true).FirstOrDefault()?.ImageUrl" />
+                    </div>
+                    <span asp-validation-for="ProductPosterImageFile" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">ImageFile</label>
+                    <input asp-for="ImageFiles" class="form-control" id="exampleInputEmail1">
+                    <div style="display:flex;flex-wrap:wrap">
+                        @foreach (var image in Model.ProductImages.Where(x => x.IsPoster == false))
+                        {
+
+                            <div style="width:150px;margin:0 20px;margin-top:20px;position:relative;">
+                                <span class="delete-image-btn position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-3 text-white">X</span>
+                                <img style="max-width:100%" src="~/uploads/products/@image.ImageUrl" />
+                                <input name="ProductImageIds" type="hidden" value="@image.Id" />
+                            </div>
+
+                        }
+                    </div>
+                    <span asp-validation-for="ImageFiles" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Category Name</label>
+                    <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(ViewBag.Categories,"Id","Name"))"></select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">ProductColor</label>
+                    <select asp-for="ProductColorId" class="form-control" asp-items="@(new SelectList(ViewBag.ProductColor,"Id","Name"))"></select>
+                    <span asp-validation-for="ProductColorId" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">BrandName</label>
+                    <select asp-for="BrandId" class="form-control" asp-items="@(new SelectList(ViewBag.Brand,"Id","Name"))"></select>
+                    <span asp-validation-for="BrandId" class="text-danger"></span>
+                </div>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    var btns = document.querySelectorAll(".delete-image-btn");
+
+    btns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            btn.parentElement.remove()
+        })
+    })
+</script>

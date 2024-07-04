@@ -1,0 +1,31 @@
+﻿@using NanoNexus.Core.Models
+@model ContactPost
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form asp-action="Reply" method="post">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                    <input asp-for="Name" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="Email"></label>
+                    <input asp-for="Email" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Comment</label>
+                    <input asp-for="Comment" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="Comment" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Answer</label>
+                    <input asp-for="Answer" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="Answer" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+</div>

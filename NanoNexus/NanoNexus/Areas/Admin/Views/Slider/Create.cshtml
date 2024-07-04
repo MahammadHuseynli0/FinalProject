@@ -1,0 +1,19 @@
+﻿@using NanoNexus.Business.DTOs.SliderDTOs
+@model SliderCreateDTO
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+               
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">ImageFile</label>
+                    <input asp-for="ImageFile" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create</button>
+                <a asp-action="index" asp-controller="slider" class="btn btn-danger">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

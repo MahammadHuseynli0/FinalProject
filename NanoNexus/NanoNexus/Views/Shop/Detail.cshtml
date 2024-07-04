@@ -1,0 +1,185 @@
+﻿@using NanoNexus.ViewModels
+@model ShopVm
+<!doctype html>
+<html lang="zxx">
+
+
+
+
+
+        <main>
+
+            <!-- breadcrumb start -->
+            <section class="breadcrumb-area">
+                <div class="container">
+                    <div class="radios-breadcrumb breadcrumbs">
+                        <ul class="list-unstyled d-flex align-items-center">
+                            <li class="radiosbcrumb-item radiosbcrumb-begin">
+                                <a asp-action="Index" asp-controller="Home"><span>Home</span></a>
+                            </li>
+                            <li class="radiosbcrumb-item radiosbcrumb-end">
+                                <span>Shop Single</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb end -->
+            <!-- start shop-single-section -->
+            <section class="shop-single-section pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="product-single-wrap mb-30">
+                                <div class="product_details_img">
+                                    <div class="tab-content" id="myTabContent">
+                                        @foreach (var img in Model.Product.ProductImages)
+                                        {
+                                            <div class="tab-pane @(img == Model.Product.ProductImages.First() ? "show active" : "")" id="tab-@img.Id" role="tabpanel" aria-labelledby="tab-@img.Id-tab">
+                                                <div class="pl_thumb">
+                                                    <img src="~/uploads/products/@img.ImageUrl" alt="">
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                <div class="shop_thumb_tab">
+                                    <ul class="nav" id="myTab2" role="tablist">
+                                        @foreach (var img in Model.Product.ProductImages)
+                                        {
+                                            <li class="nav-item">
+                                                <button class="nav-link @(img == Model.Product.ProductImages.First() ? "active" : "")" id="tab-@img.Id-tab" data-bs-toggle="tab" data-bs-target="#tab-@img.Id" type="button" role="tab" aria-controls="tab-@img.Id" aria-selected="@(img == Model.Product.ProductImages.First() ? "true" : "false")">
+                                                    <img src="~/uploads/products/@img.ImageUrl" alt="">
+                                                </button>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 product-details-col">
+                            <div class="product-details">
+                                <h2>@Model.Product.Name</h2>
+                          
+                                <div class="price">
+                                    @if (Model.Product.DiscountPercent != 0)
+                                    {
+                                        <span class="current"> $@(Model.Product.Price - Model.Product.Price * Model.Product.DiscountPercent / 100)</span>
+                                        <span class="old"> $@Model.Product.Price</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="current">$@Model.Product.Price</span>
+                                    }
+
+                                </div>
+                                <p>	@Model.Product.TechnicalSpecs</p>
+                        <div class="model-option-wrap ul_li mt-25">
+                            <span>Brand : </span>
+                            <ul class="model-option ul_li">
+                                <li class="active"><a asp-action="Index" asp-controller="Shop" asp-route-id="@Model.Product.Category.Id">@Model.Product.Brand.Name</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="thb-product-meta-before mt-20">
+                            <div class="product_meta">
+                                <div class="model-option-wrap ul_li mt-25">
+                                    <span>Category: </span>
+                                    <ul class="model-option ul_li">
+                                        <li class="active">
+                                            <a asp-action="Index" asp-controller="Shop" asp-route-categoryid="@Model.Product.Category.Id">@Model.Product.Category.Name</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                               
+                                <div class="model-option-wrap ul_li mt-25">
+                                
+                                    <span>Color : </span>
+                                    <ul class="model-option ul_li">
+                                        <li class="active"> <a asp-action="Index" asp-controller="Shop" asp-route-cid="@Model.Product.ProductColor.Id">@Model.Product.ProductColor.Name</a></li>
+                                    </ul>
+                                  
+                                </div>
+
+                              
+                            </div>
+                        </div>
+                                <div class="product-option">
+                                    <form class="form">
+                                <div class="product-row">
+                                    <div class="add-to-cart-btn" style="width:200px;">
+                                        <button class="thm-btn thm-btn__2 no-icon" type="submit">
+                                            <a asp-action="addtobasket" asp-controller="shop" asp-route-productId="@Model.Product.Id" class="add-to-basket" title="">
+                                                <span>Shop Now</span>
+                                            </a>
+                                               
+                                       
+                                        </button>
+                                    </div>
+                                    <div>
+                                       
+                                    </div>
+
+                                </div>
+                                    </form>
+                                </div>
+
+
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <
+
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <div class="realted-porduct">
+                                <h3>Related product</h3>
+                                <div class="shop-area">
+                                    <ul class="products clearfix">
+                                      @foreach (var item in Model.Products)
+                                        {
+                                            <li class="product">
+                                                <div class="product-holder">
+                                                    <a asp-action="Detail"> <img src="~/uploads/products/@item.ProductImages.FirstOrDefault(x=>x.IsPoster==true).ImageUrl" alt=""></a>
+                                                    <ul class="product__action">
+                                                <li><a asp-action="AddToBasket" asp-controller="shop" asp-route-productId="@item.Id" class="add-to-basket"><i class="far fa-shopping-basket"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-info">
+                                                    <div class="product__review ul_li">
+                                                    
+                                                      
+                                                    </div>
+                                                    <h2 class="product__title">@item.Name</h2>
+                                        
+                                                    <div class="product__progress progress color-primary">
+                                                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    @if (item.DiscountPercent != 0)
+                                                    {
+                                                        <h4 class="product__price mb-20"><span class="new">$@(item.Price - item.Price * item.DiscountPercent / 100)</span><span class="old">$@item.Price</span></h4>
+                                                    }
+                                                    else
+                                                    {
+                                                        <h4 class="product__price mb-20"><span class="new"></span><span class="old">$@item.Price</span></h4>
+                                                    }
+
+                                                </div>
+                                            </li>
+                                        }
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- end of container -->
+            </section>
+            <!-- end of shop-single-section -->
+
+
+        </main>
+

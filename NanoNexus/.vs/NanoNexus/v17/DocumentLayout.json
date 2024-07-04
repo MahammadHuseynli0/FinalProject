@@ -1,0 +1,874 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\viewservices\\layoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\viewservices\\layoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\setting\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\setting\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\setting\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\setting\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\dtos\\settingdtos\\settingupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\dtos\\settingdtos\\settingupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\setting\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\setting\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\setting\\archive.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\setting\\archive.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\service\\concretes\\settingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\service\\concretes\\settingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\service\\abstracts\\isettingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\service\\abstracts\\isettingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\productcolorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\productcolorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\viewmodels\\adminloginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\viewmodels\\adminloginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\shop\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\shop\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\shop\\showbasket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\shop\\showbasket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\wwwroot\\assets\\js\\basket.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\wwwroot\\assets\\js\\basket.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924E6F63-01CA-4D65-A578-07A569B2B939}|NanoNexus.Data\\NanoNexus.Data.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.data\\configurations\\settinconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924E6F63-01CA-4D65-A578-07A569B2B939}|NanoNexus.Data\\NanoNexus.Data.csproj|solutionrelative:nanonexus.data\\configurations\\settinconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\shop\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\shop\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\viewmodels\\basketitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\viewmodels\\basketitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\service\\abstracts\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\service\\abstracts\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\service\\concretes\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\service\\concretes\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\service\\concretes\\contactpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\service\\concretes\\contactpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\service\\concretes\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\service\\concretes\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\order\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\order\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\viewmodels\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\viewmodels\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\viewmodels\\checkoutvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\viewmodels\\checkoutvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus.business\\service\\abstracts\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29FE912-C8B2-4DA8-82C8-E28E63CE5861}|NanoNexus.Business\\NanoNexus.Business.csproj|solutionrelative:nanonexus.business\\service\\abstracts\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\views\\contact\\booktable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\views\\contact\\booktable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\viewmodels\\memberloginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\viewmodels\\memberloginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|c:\\users\\user\\desktop\\finalproject\\nanonexus\\nanonexus\\wwwroot\\assets\\js\\filterjs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DF43A682-4EF1-491F-868B-838A2F0FA88E}|NanoNexus\\NanoNexus.csproj|solutionrelative:nanonexus\\wwwroot\\assets\\js\\filterjs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T02:36:09.979Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "NanoNexus.Business\\Mapping\\MappingProfile.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAAC0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T16:02:41.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Setting\\Update.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Setting\\Update.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Setting\\Update.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Setting\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T15:51:09.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Setting\\Index.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Setting\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Setting\\Index.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Setting\\Index.cshtml",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwD4AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T15:42:49.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Program.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Program.cs",
+              "RelativeToolTip": "NanoNexus\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T13:14:26.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SettingController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "ViewState": "AQIAAFUAAABAyszMzMwlwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T05:42:05.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SettingUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\DTOs\\SettingDTOs\\SettingUpdateDTO.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\DTOs\\SettingDTOs\\SettingUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\DTOs\\SettingDTOs\\SettingUpdateDTO.cs",
+              "RelativeToolTip": "NanoNexus.Business\\DTOs\\SettingDTOs\\SettingUpdateDTO.cs",
+              "ViewState": "AQIAAAQAAACAZmZmZiYgwB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T05:52:17.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LayoutService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewServices\\LayoutService.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\ViewServices\\LayoutService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewServices\\LayoutService.cs",
+              "RelativeToolTip": "NanoNexus\\ViewServices\\LayoutService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T02:43:28.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Setting\\Create.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Setting\\Create.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Setting\\Create.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Setting\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T15:50:10.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Archive.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Setting\\Archive.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Setting\\Archive.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Setting\\Archive.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Setting\\Archive.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCwAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T15:49:59.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T01:11:31.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:31:55.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ISettingService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Abstracts\\ISettingService.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\Service\\Abstracts\\ISettingService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Abstracts\\ISettingService.cs",
+              "RelativeToolTip": "NanoNexus.Business\\Service\\Abstracts\\ISettingService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T08:13:35.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SettingService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Concretes\\SettingService.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\Service\\Concretes\\SettingService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Concretes\\SettingService.cs",
+              "RelativeToolTip": "NanoNexus.Business\\Service\\Concretes\\SettingService.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAowGcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T03:01:27.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T06:09:46.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAoAAAAASGZmZmbuvx8AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T06:06:08.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TagController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\TagController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\TagController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\TagController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\TagController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:32:40.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:32:35.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T05:42:54.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProductColorController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\ProductColorController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\ProductColorController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\ProductColorController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\ProductColorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:32:20.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:41:54.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T14:32:08.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminLoginVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\AdminLoginVM.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\ViewModels\\AdminLoginVM.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\AdminLoginVM.cs",
+              "RelativeToolTip": "NanoNexus\\ViewModels\\AdminLoginVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T15:15:47.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shop\\Detail.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Shop\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shop\\Detail.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Shop\\Detail.cshtml",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAQwIwAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-03T01:21:41.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAnwFEAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T02:32:20.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ShowBasket.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shop\\ShowBasket.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Shop\\ShowBasket.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shop\\ShowBasket.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Shop\\ShowBasket.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T11:56:49.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "NanoNexus\\Controllers\\ShopController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T11:35:35.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwBAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T02:27:24.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "NanoNexus\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAkwF8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:27:54.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T03:09:09.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T02:40:09.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "basket.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\wwwroot\\assets\\js\\basket.js",
+              "RelativeDocumentMoniker": "NanoNexus\\wwwroot\\assets\\js\\basket.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\wwwroot\\assets\\js\\basket.js",
+              "RelativeToolTip": "NanoNexus\\wwwroot\\assets\\js\\basket.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-02T10:03:35.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SettinConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Data\\Configurations\\SettinConfiguration.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Data\\Configurations\\SettinConfiguration.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Data\\Configurations\\SettinConfiguration.cs",
+              "RelativeToolTip": "NanoNexus.Data\\Configurations\\SettinConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T02:55:37.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CheckOut.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shop\\CheckOut.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Shop\\CheckOut.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Shop\\CheckOut.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Shop\\CheckOut.cshtml",
+              "ViewState": "AQIAAMUBAAAAAAAAAAAAAOsBAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T13:48:08.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BasketItemVm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\BasketItemVm.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\ViewModels\\BasketItemVm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\BasketItemVm.cs",
+              "RelativeToolTip": "NanoNexus\\ViewModels\\BasketItemVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T03:51:58.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Abstracts\\IProductService.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\Service\\Abstracts\\IProductService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Abstracts\\IProductService.cs",
+              "RelativeToolTip": "NanoNexus.Business\\Service\\Abstracts\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T02:01:51.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Concretes\\ProductService.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\Service\\Concretes\\ProductService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Concretes\\ProductService.cs",
+              "RelativeToolTip": "NanoNexus.Business\\Service\\Concretes\\ProductService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAwDsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T13:28:53.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAA4AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T01:58:57.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Product\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T13:41:10.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ContactPostService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Concretes\\ContactPostService.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\Service\\Concretes\\ContactPostService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Concretes\\ContactPostService.cs",
+              "RelativeToolTip": "NanoNexus.Business\\Service\\Concretes\\ContactPostService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:36:28.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Concretes\\EmailService.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\Service\\Concretes\\EmailService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Concretes\\EmailService.cs",
+              "RelativeToolTip": "NanoNexus.Business\\Service\\Concretes\\EmailService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAD4vycAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:41:21.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T12:21:21.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Order\\Detail.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Order\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Order\\Detail.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Order\\Detail.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T12:42:42.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "NanoNexus\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T12:42:47.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "OrderVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\OrderVM.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\ViewModels\\OrderVM.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\OrderVM.cs",
+              "RelativeToolTip": "NanoNexus\\ViewModels\\OrderVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T20:30:31.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAAEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T12:33:08.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "NanoNexus\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAmwHAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:32:59.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CheckOutVm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\CheckOutVm.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\ViewModels\\CheckOutVm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\CheckOutVm.cs",
+              "RelativeToolTip": "NanoNexus\\ViewModels\\CheckOutVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T20:30:42.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\appsettings.json",
+              "RelativeDocumentMoniker": "NanoNexus\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\appsettings.json",
+              "RelativeToolTip": "NanoNexus\\appsettings.json",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-02T12:46:04.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "BookTable.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Contact\\BookTable.cshtml",
+              "RelativeDocumentMoniker": "NanoNexus\\Views\\Contact\\BookTable.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\Views\\Contact\\BookTable.cshtml",
+              "RelativeToolTip": "NanoNexus\\Views\\Contact\\BookTable.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T12:57:11.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Abstracts\\IEmailService.cs",
+              "RelativeDocumentMoniker": "NanoNexus.Business\\Service\\Abstracts\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus.Business\\Service\\Abstracts\\IEmailService.cs",
+              "RelativeToolTip": "NanoNexus.Business\\Service\\Abstracts\\IEmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:37:37.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "MemberLoginVm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\MemberLoginVm.cs",
+              "RelativeDocumentMoniker": "NanoNexus\\ViewModels\\MemberLoginVm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\ViewModels\\MemberLoginVm.cs",
+              "RelativeToolTip": "NanoNexus\\ViewModels\\MemberLoginVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:28:48.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "filterjs.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\wwwroot\\assets\\js\\filterjs.js",
+              "RelativeDocumentMoniker": "NanoNexus\\wwwroot\\assets\\js\\filterjs.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\FinalProject\\NanoNexus\\NanoNexus\\wwwroot\\assets\\js\\filterjs.js",
+              "RelativeToolTip": "NanoNexus\\wwwroot\\assets\\js\\filterjs.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-02T10:06:45.205Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

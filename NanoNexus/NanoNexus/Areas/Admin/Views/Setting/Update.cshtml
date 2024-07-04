@@ -1,0 +1,21 @@
+﻿@using NanoNexus.Business.DTOs.SettingDTOs
+@model SettingUpdateDTO
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form asp-action="Update" method="post">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Key</label>
+                    <input asp-for="Key" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="Key" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Value</label>
+                    <input asp-for="Value" class="form-control" id="exampleInputEmail1">
+                    <span asp-validation-for="Value" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
